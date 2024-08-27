@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://csxm4gs685i5e"]
+
+[ext_resource type="Script" path="res://scenes/sokoban_box.gd" id="1_xoltc"]
+[ext_resource type="Texture2D" uid="uid://ibnintm4n46g" path="res://assets/boxes/crate_42.png" id="2_xem45"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c5wga"]
+size = Vector2(64, 64)
+
+[node name="Sokoban Box" type="CharacterBody2D"]
+position = Vector2(32, 32)
+script = ExtResource("1_xoltc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xem45")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_c5wga")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 64)

@@ -1,0 +1,158 @@
+[gd_scene load_steps=6 format=3 uid="uid://cs58ab884nc22"]
+
+[ext_resource type="Texture2D" uid="uid://cgq0ej464ypwn" path="res://assets/extra/Tilesheet/sokoban_tilesheet.png" id="1_8ex6l"]
+[ext_resource type="PackedScene" uid="uid://csxm4gs685i5e" path="res://scenes/sokoban_box.tscn" id="2_m6fsx"]
+[ext_resource type="PackedScene" uid="uid://cte06brrkutbv" path="res://scenes/sokoban_goal.tscn" id="3_sb7jd"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sspyf"]
+texture = ExtResource("1_8ex6l")
+texture_region_size = Vector2i(64, 64)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+6:6/0/custom_data_0 = true
+7:6/0 = 0
+7:6/0/custom_data_0 = true
+8:6/0 = 0
+8:6/0/custom_data_0 = true
+9:6/0 = 0
+9:6/0/custom_data_0 = true
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+6:7/0/custom_data_0 = true
+7:7/0 = 0
+7:7/0/custom_data_0 = true
+8:7/0 = 0
+8:7/0/custom_data_0 = true
+9:7/0 = 0
+9:7/0/custom_data_0 = true
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_68ylc"]
+tile_size = Vector2i(64, 64)
+custom_data_layer_0/name = "non-walkable"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_sspyf")
+
+[node name="Level1" type="TileMap"]
+tile_set = SubResource("TileSet_68ylc")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 589824, 6, 65536, 589824, 6, 131072, 589824, 6, 196608, 589824, 6, 262144, 589824, 6, 589825, 589824, 6, 589826, 589824, 6, 589827, 589824, 6, 589828, 589824, 6, 589829, 589824, 6, 5, 589824, 6, 4, 589824, 6, 3, 589824, 6, 2, 589824, 6, 1, 589824, 6, 393218, 589824, 6, 393217, 589824, 6, 458753, 589824, 6, 524289, 589824, 6, 524294, 589824, 6, 524295, 589824, 6, 524296, 589824, 6, 393219, 589824, 6, 327683, 589824, 6, 262145, 589824, 6, 262146, 589824, 6, 262147, 589824, 6, 65544, 589824, 6, 131080, 589824, 6, 196616, 589824, 6, 262152, 589824, 6, 327688, 589824, 6, 393224, 589824, 6, 458760, 589824, 6, 458754, 720896, 6, 524290, 720896, 6, 524291, 720896, 6, 458755, 720896, 6, 458756, 720896, 6, 524292, 720896, 6, 458757, 720896, 6, 524293, 720896, 6, 393221, 720896, 6, 393220, 720896, 6, 393222, 720896, 6, 458758, 720896, 6, 393223, 720896, 6, 458759, 720896, 6, 327687, 720896, 6, 262151, 720896, 6, 262150, 720896, 6, 327686, 720896, 6, 327685, 720896, 6, 262149, 720896, 6, 262148, 720896, 6, 65537, 720896, 6, 131073, 720896, 6, 131074, 720896, 6, 196610, 720896, 6, 196609, 720896, 6, 65538, 720896, 6, 131075, 720896, 6, 196611, 720896, 6, 131076, 720896, 6, 65540, 720896, 6, 65539, 720896, 6, 196612, 720896, 6, 196613, 720896, 6, 196614, 720896, 6, 131078, 720896, 6, 65542, 589824, 6, 65541, 589824, 6, 131077, 720896, 6, 65543, 589824, 6, 131079, 720896, 6, 196615, 720896, 6, 589830, 589824, 6, 327684, 720896, 6)
+
+[node name="Goals" type="Node" parent="."]
+
+[node name="GoalArea" parent="Goals" instance=ExtResource("3_sb7jd")]
+position = Vector2(480, 480)
+
+[node name="GoalArea2" parent="Goals" instance=ExtResource("3_sb7jd")]
+position = Vector2(160, 544)
+
+[node name="GoalArea3" parent="Goals" instance=ExtResource("3_sb7jd")]
+position = Vector2(288, 352)
+
+[node name="GoalArea4" parent="Goals" instance=ExtResource("3_sb7jd")]
+position = Vector2(416, 160)
+
+[node name="Boxes" type="Node" parent="."]
+
+[node name="Sokoban Box" parent="Boxes" instance=ExtResource("2_m6fsx")]
+position = Vector2(224, 160)
+
+[node name="Sokoban Box2" parent="Boxes" instance=ExtResource("2_m6fsx")]
+position = Vector2(288, 480)
+
+[node name="Sokoban Box3" parent="Boxes" instance=ExtResource("2_m6fsx")]
+position = Vector2(416, 352)
+
+[node name="Sokoban Box4" parent="Boxes" instance=ExtResource("2_m6fsx")]
+position = Vector2(288, 224)

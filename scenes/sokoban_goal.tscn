@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cte06brrkutbv"]
+
+[ext_resource type="Script" path="res://scenes/sokoban_goal.gd" id="1_w2fcd"]
+[ext_resource type="Texture2D" uid="uid://caf7u8tq7flyt" path="res://assets/ground/ground_03.png" id="2_vjtvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah2i6"]
+size = Vector2(32, 32)
+
+[node name="GoalArea" type="Area2D"]
+script = ExtResource("1_w2fcd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vjtvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ah2i6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
